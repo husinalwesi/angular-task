@@ -1,0 +1,37 @@
+#points-section{
+    bottom: -42px;
+    left: -29px;
+    -webkit-animation: points-container-animation 10s ease-in-out infinite alternate;
+            animation: points-container-animation 10s ease-in-out infinite alternate;
+    & div{
+        font-size: 0;
+        & span{
+            content: " ";
+            width: 7px;
+            height: 7px;
+            background-color: var(--primary-color);
+            margin: 3.5px;
+            -webkit-animation: points-animation 1s ease-in-out alternate ;
+                    animation: points-animation 1s ease-in-out alternate ;
+        }
+    }
+}
+
+@-webkit-keyframes points-container-animation {
+    50% {opacity: 0.5;}
+    55% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(6deg);transform: rotate(6deg);}
+}
+@keyframes points-container-animation {
+    50% {opacity: 0.5;}
+    55% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(6deg);transform: rotate(6deg);}
+}
+@-webkit-keyframes points-animation {
+    from {margin: 0;}
+    to {margin: 3.5px;}
+}
+@keyframes points-animation {
+    from {margin: 0;}
+    to {margin: 3.5px;}
+}

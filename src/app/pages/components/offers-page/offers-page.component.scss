@@ -1,0 +1,12 @@
+section{
+    background-color: var(--secondary-color);
+    & h1 {
+        font-size: 5.5rem;
+        font-style: normal;
+        letter-spacing: -0.02em;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+}

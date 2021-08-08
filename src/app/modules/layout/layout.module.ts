@@ -8,10 +8,11 @@ import { MainHomeSectionComponent } from './components/main-home-section/main-ho
 import { TripSectionComponent } from './components/trip-section/trip-section.component';
 import { AnimatedLightBackgroundComponent } from './components/animated-light-background/animated-light-background.component';
 import { TripTypeComponent } from './components/trip-type/trip-type.component';
+import { AnimatedPointsComponent } from './components/animated-points/animated-points.component';
 // 
 @NgModule({
-  declarations: [MainHomeSectionComponent, TripSectionComponent, AnimatedLightBackgroundComponent, TripTypeComponent],
+  declarations: [MainHomeSectionComponent, TripSectionComponent, AnimatedLightBackgroundComponent, TripTypeComponent, AnimatedPointsComponent],
   imports: [CommonModule, LayoutRoutingModule, SharedModule],
-  exports: [MainHomeSectionComponent, TripSectionComponent, AnimatedLightBackgroundComponent, TripTypeComponent]
+  exports: [MainHomeSectionComponent, TripSectionComponent, AnimatedLightBackgroundComponent, TripTypeComponent, AnimatedPointsComponent]
 })
 export class LayoutModule {}
