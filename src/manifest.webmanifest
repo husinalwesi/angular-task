@@ -1,7 +1,7 @@
 {
   "name": "angular-task",
   "short_name": "angular-task",
-  "theme_color": "#1976d2",
+  "theme_color": "#011627",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
