@@ -57,41 +57,41 @@
           right: 0;
           background-color: #092238;
           border-top-left-radius: 7px;
-        }
-        & .carousel-control-prev,
-        & .carousel-control-next {
-            width: 45px;
-            height: 45px;
-            opacity: 1;
-            top: unset;
-            background-color: var(--secondary-color);
-            -webkit-box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
-                    box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
-            -webkit-transition: all 0.3;
-            -o-transition: all 0.3;
-            transition: all 0.3;
-            &:hover{
-                -webkit-transition: all 0.3;
-                -o-transition: all 0.3;
-                transition: all 0.3;
-                opacity: 0.8;
-            }
-            &.carousel-control-prev {
-                border-top-left-radius: 7px;
-                margin-right: 2px;
-            }
-            & .carousel-control-prev-icon,
-            & .carousel-control-next-icon{
-                width: 17px;
-                height: 17px;
-                background-image: url("../../../../assets/svg/carousel-control.svg");
-                background-repeat: no-repeat;
-                &.carousel-control-prev-icon{
-                    -webkit-transform: rotate(180deg);
-                        -ms-transform: rotate(180deg);
-                            transform: rotate(180deg);
-                }
-            }
+          & .carousel-control-prev,
+          & .carousel-control-next {
+              width: 45px;
+              height: 45px;
+              opacity: 1;
+              top: unset;
+              background-color: var(--secondary-color);
+              -webkit-box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+                      box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+              -webkit-transition: all 0.3;
+              -o-transition: all 0.3;
+              transition: all 0.3;
+              &:hover{
+                  -webkit-transition: all 0.3;
+                  -o-transition: all 0.3;
+                  transition: all 0.3;
+                  opacity: 0.8;
+              }
+              &.carousel-control-prev {
+                  border-top-left-radius: 7px;
+                  margin-right: 2px;
+              }
+              & .carousel-control-prev-icon,
+              & .carousel-control-next-icon{
+                  width: 17px;
+                  height: 17px;
+                  background-image: url("../../../../assets/svg/carousel-control.svg");
+                  background-repeat: no-repeat;
+                  &.carousel-control-prev-icon{
+                      -webkit-transform: rotate(180deg);
+                          -ms-transform: rotate(180deg);
+                              transform: rotate(180deg);
+                  }
+              }
+          }
         }
     }
   }

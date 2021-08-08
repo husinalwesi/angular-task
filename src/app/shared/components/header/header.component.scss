@@ -93,9 +93,7 @@ header .navbar{
 // Media Query
 // // Medium devices, Small devices and Extra small devices (tablets, landscape phones, portrait phones)
 @media (max-width: 991.98px){
-    header .navbar #navbarSupportedContent{
-        &.collapse.show {
-            display: block;
-        }
+    #navbarSupportedContent.collapse.show {
+        display: block;
     }
 }

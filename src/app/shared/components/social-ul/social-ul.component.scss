@@ -23,7 +23,7 @@
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
-        & span.icon{
+        & .icon{
             -webkit-transition: all 0.3s;
             -o-transition: all 0.3s;
             transition: all 0.3s;                            
@@ -35,7 +35,7 @@
             -webkit-transition: all 0.3s;
             -o-transition: all 0.3s;
             transition: all 0.3s;                    
-            & span.icon{
+            & .icon{
                 -webkit-transform: rotate3d(1, 1, 1, 360deg);
                         transform: rotate3d(1, 1, 1, 360deg);
                 -webkit-transition: all 0.3s;

@@ -14,7 +14,7 @@
                 font-size: 3.3rem;
                 letter-spacing: -0.02em;
             }
-            & span.icon{
+            & .icon{
                 margin: 6px 1.6rem 0 1.6rem;
             }
             & p{
@@ -88,7 +88,7 @@
 // Media Query
 // // Medium devices (tablets)
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #trip-section .container .pick-your-trip-section h1{
+    .pick-your-trip-section h1{
         font-size: 1.8rem;
     }
 }
@@ -128,15 +128,13 @@ app-animated-light-background{
                 height: 25px;
             }
         }
-        & #trip-tabs{
-            &.nav-tabs{
-                border-bottom: 0;
-                & .nav-link{
-                    padding-bottom: 23px;
-                    padding-top: 10px;
-                    &::after {
-                        bottom: 8px;
-                    }
+        & #trip-tabs.nav-tabs{
+            border-bottom: 0;
+            & .nav-link{
+                padding-bottom: 23px;
+                padding-top: 10px;
+                &::after {
+                    bottom: 8px;
                 }
             }
         }

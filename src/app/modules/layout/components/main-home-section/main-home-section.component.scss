@@ -43,37 +43,35 @@
         background: linear-gradient(180deg, transparent 0%, var(--secondary-color) 80%);
         & .container{
             max-width: 74%;
-            & .flex-row-wrap > .page-50-percent{
-                &:first-child{
-                    -webkit-animation: slide-top 0.7s ease-in-out infinite alternate ;
-                    animation: slide-top 0.7s ease-in-out infinite alternate ;
-                    & a{
-                        -webkit-transform: rotate(-90deg);
-                            -ms-transform: rotate(-90deg);
-                                transform: rotate(-90deg);
-                        -webkit-transform-origin: 14px 0px;
-                            -ms-transform-origin: 14px 0px;
-                                transform-origin: 14px 0px;
-                        font-size: 10px;
-                        letter-spacing: 0.1em;
-                        opacity: 0.9;
-                        margin-left: -38px;
-                        -webkit-animation-name: scroll-animation;
-                                animation-name: scroll-animation;
-                        -webkit-animation-duration: 1s;
-                                animation-duration: 1s;
-                        &::after{
-                            content: " ";
-                            width: 1px;
-                            height: 60px;
-                            background-color: #09F4F4;
-                            position: absolute;
-                            -webkit-transform: rotate(90deg);
-                                -ms-transform: rotate(90deg);
-                                    transform: rotate(90deg);
-                            left: -41px;
-                            bottom: -23px;
-                        }
+            & .flex-row-wrap > .page-50-percent:first-child{
+                -webkit-animation: slide-top 0.7s ease-in-out infinite alternate ;
+                animation: slide-top 0.7s ease-in-out infinite alternate ;
+                & a{
+                    -webkit-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                            transform: rotate(-90deg);
+                    -webkit-transform-origin: 14px 0px;
+                        -ms-transform-origin: 14px 0px;
+                            transform-origin: 14px 0px;
+                    font-size: 10px;
+                    letter-spacing: 0.1em;
+                    opacity: 0.9;
+                    margin-left: -38px;
+                    -webkit-animation-name: scroll-animation;
+                            animation-name: scroll-animation;
+                    -webkit-animation-duration: 1s;
+                            animation-duration: 1s;
+                    &::after{
+                        content: " ";
+                        width: 1px;
+                        height: 60px;
+                        background-color: #09F4F4;
+                        position: absolute;
+                        -webkit-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                                transform: rotate(90deg);
+                        left: -41px;
+                        bottom: -23px;
                     }
                 }
             }
