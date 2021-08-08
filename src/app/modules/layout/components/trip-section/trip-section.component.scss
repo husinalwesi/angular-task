@@ -119,8 +119,14 @@ app-animated-light-background{
 // Extra small devices (portrait phones)
 @media (max-width: 575.98px) {
     #trip-section .container{
-        & .pick-your-trip-section h1{
-            font-size: 1.4rem;
+        & .pick-your-trip-section{
+            & h1{
+                font-size: 1.4rem;
+            }
+            .close{
+                width: 25px;
+                height: 25px;
+            }
         }
         & #trip-tabs{
             &.nav-tabs{

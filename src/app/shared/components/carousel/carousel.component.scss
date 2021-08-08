@@ -84,7 +84,8 @@
             & .carousel-control-next-icon{
                 width: 17px;
                 height: 17px;
-                background-image: url("data:image/svg+xml,%0A%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 12L19 12' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 19L19 12L12 5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                background-image: url("../../../../assets/svg/carousel-control.svg");
+                background-repeat: no-repeat;
                 &.carousel-control-prev-icon{
                     -webkit-transform: rotate(180deg);
                         -ms-transform: rotate(180deg);
