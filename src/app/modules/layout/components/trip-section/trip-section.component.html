@@ -1,4 +1,5 @@
 <section id="trip-section" #tripSection class="position-relative">
+    <app-animated-light-background class="d-block position-fixed w-100 h-100"></app-animated-light-background>
     <div class="container position-relative">
       <div class="d-flex justify-content-start align-items-center pt-0 pb-5 pick-your-trip-section">
         <h1 class="text-white mb-0">Pick your trip</h1>
@@ -10,5 +11,6 @@
           <a class="nav-link border-0 border-0 pb-4" [class.active]="selectedTripTypeIndex == tripIndex" href="javascript:void(0);" (click)="selectedTripTypeIndex = tripIndex">{{trip.title}}</a>
         </li>
       </ul>
+      <app-trip-type [tripDetails]="tripTypes[selectedTripTypeIndex]"></app-trip-type>
     </div>
 </section>
