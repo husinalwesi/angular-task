@@ -8,7 +8,7 @@
       </div>
       <ul id="trip-tabs" class="nav nav-tabs nav-fill m-0">
         <li class="nav-item position-relative" *ngFor="let trip of tripTypes; let tripIndex = index">
-          <a class="nav-link border-0 border-0 pb-4" [class.active]="selectedTripTypeIndex == tripIndex" href="javascript:void(0);" (click)="selectedTripTypeIndex = tripIndex">{{trip.title}}</a>
+          <a class="nav-link border-0 border-0" [class.active]="selectedTripTypeIndex == tripIndex" href="javascript:void(0);" (click)="selectedTripTypeIndex = tripIndex">{{trip.title}}</a>
         </li>
       </ul>
       <app-trip-type [tripDetails]="tripTypes[selectedTripTypeIndex]"></app-trip-type>

@@ -1,3 +1,10 @@
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.p-0 {
+    padding: 0;
+}
 .social-media-links{
     &.main-section{
         padding-top: 1.2rem;
@@ -13,10 +20,13 @@
             }
         }
     }
-    &.trip-section li{
-        margin: 0 8px;
-        &:first-child{
-            margin-left: 0;
+    &.trip-section{
+        margin-top: 10px;
+        & li{
+            margin: 0 8px;
+            &:first-child{
+                margin-left: 0;
+            }
         }
     }
     & a{

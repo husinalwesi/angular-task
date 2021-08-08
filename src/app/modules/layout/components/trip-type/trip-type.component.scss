@@ -1,3 +1,23 @@
+.align-self-center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+.pt-5{
+    padding-top: 3rem;
+}
+.pl-2{
+    padding-left: 0.5rem;
+}
+.pl-0{
+    padding-left: 0;
+}
+.mt-1{
+    margin-top: 0.25rem;
+}
+.mb-4{
+    margin-bottom: 1.5rem;
+}
 #trip-type-section > div{
     -webkit-animation-name: fade-animation;
             animation-name: fade-animation;
