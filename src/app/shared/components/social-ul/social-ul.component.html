@@ -1,0 +1,7 @@
+<ul class="social-media-links p-0" [ngClass]="ulClass">
+    <li class="list-unstyled" [ngClass]="liClass" *ngFor="let socialObject of data">
+      <a class="d-block" [href]="socialObject.url" rel="noreferrer" [attr.aria-label]="socialObject.key" target="_blank">
+        <span class="d-block icon" [ngClass]="socialObject.key"></span>
+      </a>
+    </li>
+</ul>

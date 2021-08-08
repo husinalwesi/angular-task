@@ -1,0 +1,16 @@
+<section id="trip-section" #tripSection class="position-relative">
+    <app-animated-light-background class="d-block position-fixed w-100 h-100"></app-animated-light-background>
+    <div class="container position-relative">
+      <div class="d-flex justify-content-start align-items-center pt-0 pb-5 pick-your-trip-section">
+        <h1 class="text-white mb-0">Pick your trip</h1>
+        <span class="d-block icon close"></span>
+        <p class="text-white mb-0">Our team put together some trips to you to discover,<br/>feel free to discover each of them.</p>
+      </div>
+      <ul id="trip-tabs" class="nav nav-tabs nav-fill m-0">
+        <li class="nav-item position-relative" *ngFor="let trip of tripTypes; let tripIndex = index">
+          <a class="nav-link border-0 border-0" [class.active]="selectedTripTypeIndex == tripIndex" href="javascript:void(0);" (click)="selectedTripTypeIndex = tripIndex">{{trip.title}}</a>
+        </li>
+      </ul>
+      <app-trip-type [tripDetails]="tripTypes[selectedTripTypeIndex]"></app-trip-type>
+    </div>
+</section>

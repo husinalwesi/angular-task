@@ -1,0 +1,158 @@
+header{
+    display: block;
+}
+.pr-4{
+    padding-right: 1.5rem;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.icon.search{
+    background-image: url("../../../../assets/svg/search.svg");
+    margin-top: 7px;
+}
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-fill > .nav-link, .nav-fill .nav-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    text-align: center;
+}
+.nav-link {
+    display: block;
+}
+.navbar .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    list-style: none;
+}
+header .navbar{
+    z-index: 3;
+    top: 45px;
+    & .container{
+        max-width: 76%;
+        & #navbarSupportedContent {
+            & .close {
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+                cursor: pointer;
+            }
+            ul {
+                top: 25%;
+                margin-top: 30px;
+                & a {
+                padding: 8px;
+                font-size: 36px;
+                color: #818181;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                    &:hover,
+                    &:focus {
+                        color: #f1f1f1;
+                    }
+              }
+            }
+            position: fixed;
+            width: 0;
+            left: 100%;
+            top: 0;
+            background-color: rgba(1, 22, 39);
+            background-color: rgba(1, 22, 39, 0.95);
+            overflow-x: hidden;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+            &.show{
+                width: 100%;
+                left: 0;
+            }
+            & .nav-link{
+                font-size: 14px;
+            }
+        }
+        & .collapse{
+            &:not(.show) {
+                display: none;
+            }
+            &.show {
+                display: block;
+            }
+        }
+        & .navbar-brand{
+            font-family: 'Playfair Display';
+            font-size: 25px;
+            -webkit-animation-name: brand-animation;
+                    animation-name: brand-animation;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            & span{
+                color: #45ead5;
+            }
+        }
+        & ul {
+            -webkit-animation-name: main-menu-animation;
+                    animation-name: main-menu-animation;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            & > li.nav-item{
+                margin: 0 15px;
+                &:first-child a{
+                    padding-top: 5px;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@-webkit-keyframes brand-animation {
+    from {margin-left: -100%;opacity: 0;}
+    to {margin-left: 0;opacity: 1;}
+}
+@keyframes brand-animation {
+    from {margin-left: -100%;opacity: 0;}
+    to {margin-left: 0;opacity: 1;}
+}
+@-webkit-keyframes main-menu-animation {
+    from {margin-right: -100%;opacity: 0;}
+    to {margin-right: 0;opacity: 1;}
+}
+@keyframes main-menu-animation {
+    from {margin-right: -100%;opacity: 0;}
+    to {margin-right: 0;opacity: 1;}
+}
+// Media Query
+// // Medium devices, Small devices and Extra small devices (tablets, landscape phones, portrait phones)
+@media (max-width: 991.98px){
+    #navbarSupportedContent.collapse.show {
+        display: block;
+    }
+}

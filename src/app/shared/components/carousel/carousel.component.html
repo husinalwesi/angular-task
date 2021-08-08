@@ -1,0 +1,31 @@
+<div id="carousel" class="position-relative">
+    <div class="tripCarousel">
+        <ng-container *ngFor="let item of data; let i = index">
+            <div
+            class="carousel-item"
+            *ngIf="i === currentSlide"
+            @carouselAnimation
+            >
+                <img
+                [src]="item.imageSrc"
+                [alt]="item.title"
+                [title]="item.title"
+                class="w-100"
+              />
+              <div class="carousel-caption text-left position-absolute h-100 d-flex justify-content-center flex-column">
+                <span class="position-relative w-100">{{(currentSlide + 1) | leadingZero}}.</span>
+                <!-- We used a pipe here cause the pipe exists to transform the input and return a newly formatted data -->
+                <p class="text-white text-uppercase w-100 m-0">{{item.title}}</p>
+              </div>
+            </div>
+        </ng-container>
+        <div class="carousel-control position-absolute">
+            <button aria-label="Previous Slide" class="carousel-control-prev" type="button" (click)="previousSlide()">
+                <span class="d-inline-block carousel-control-prev-icon"></span>
+            </button>
+            <button aria-label="Next Slide" class="carousel-control-next" type="button" (click)="nextSlide()">
+                <span class="d-inline-block carousel-control-next-icon"></span>
+            </button>
+        </div>
+      </div>
+</div>
