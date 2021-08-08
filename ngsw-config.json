@@ -12,7 +12,8 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js",
-          "/assets/json/*.json"
+          "/assets/json/*.json",
+          "/assets/svg/*.svg"
         ]
       }
     },
