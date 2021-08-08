@@ -1,0 +1,108 @@
+#trip-type-section > div{
+    -webkit-animation-name: fade-animation;
+            animation-name: fade-animation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;    
+}
+.carousel-section{
+    padding-right: 5rem;
+    padding-top: 6.5rem;
+}
+.offer-section{
+    padding-right: 4rem;
+    & .flex-column{
+        & h1{
+            font-size: 3rem;
+            letter-spacing: -0.02em;            
+        }
+        & p{
+            font-size: 13px;
+            letter-spacing: -0.02em;
+            margin-bottom: 2rem;
+            line-height: 18px;
+        }
+        & a{
+            letter-spacing: 0.15em;
+            padding: 15px 30px;
+            font-size: 10px;
+        }
+    }    
+}
+#social-bottom{
+    right: -40px;
+    bottom: 15px;
+    & span{
+        letter-spacing: 0.15em;
+        font-size: 11px;
+        &::after{
+            content: " ";
+            position: absolute;
+            width: 2px;
+            height: 23px;
+            background-color: var(--primary-color);
+            right: -30px;
+            bottom: -45px;
+        }
+        &::before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            width: 90px;
+            height: 2px;
+            background-color: var(--primary-color);
+            bottom: -45px;
+        }
+    }
+}
+@-webkit-keyframes fade-animation{
+    from {opacity: 0;margin-left: -100%;}
+    to {opacity: 1;margin-left: 0;}
+}
+@keyframes fade-animation{
+    from {opacity: 0;margin-left: -100%;}
+    to {opacity: 1;margin-left: 0;}
+}
+// Media Query
+// // Medium devices (tablets)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #trip-type-section{
+        & .carousel-section{
+            padding-right: 2rem;
+        }
+        & .offer-section{
+            padding-right: 1rem;
+            & .flex-column h1{
+                font-size: 1.8rem;            
+            }
+            & #social-bottom{
+                bottom: 0px;
+            }
+        }   
+    }
+}
+// // Extra small devices and Small devices (portrait phones, landscape phones)
+@media (max-width: 767.98px) {
+    #trip-type-section{
+        & .carousel-section{
+            padding-top: 2.5rem;
+            padding-right: 0;
+        }      
+        & .offer-section{
+            padding-right: 0;
+            & .flex-column h1{
+                font-size: 1.8rem;            
+            }
+        }
+    }
+}
+// // Extra small devices (portrait phones)
+@media (max-width: 575.98px) {
+    #trip-type-section {
+        & #social-bottom{
+            bottom: -50px;
+        }
+        & .offer-section .flex-column a{
+            padding: 13px 17px;
+        }
+    }
+}
