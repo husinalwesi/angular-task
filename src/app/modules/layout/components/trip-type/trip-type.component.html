@@ -1,0 +1,17 @@
+<div id="trip-type-section" class="flex-row-wrap m-0">
+    <div class="position-relative page-50-percent align-self-center pl-0 carousel-section">
+      <app-carousel class="position-relative" *ngIf="tripDetails?.tripCarouselData" [data]="tripDetails.tripCarouselData"></app-carousel>
+      <app-animated-points></app-animated-points>
+    </div>
+    <div class="page-50-percent pl-2 offer-section">
+      <div class="d-flex justify-content-center flex-column h-100">
+        <h1 class="text-white mb-4 pt-5">{{tripDetails?.title}}</h1>
+        <p class="text-white" [innerHtml]="tripDetails?.description"></p>
+        <a class="align-self-start text-white text-uppercase btn custom-btn position-relative" [routerLink]="'/offers/' + tripDetails?.key">see our latest offer</a>
+      </div>
+      <div id="social-bottom" class="position-absolute">
+        <span class="position-relative text-uppercase text-white">share it:</span>
+        <app-social-ul *ngIf="tripDetails?.socialShare" ulClass="m-0 mt-1 trip-section" liClass="d-inline-block" [data]="tripDetails.socialShare"></app-social-ul>       
+      </div>
+    </div>
+</div>

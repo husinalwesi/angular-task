@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "key": "chill-adventure",
+      "title": "Chill Adventure",
+      "description": "Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.<br/><br/>Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.",
+      "tripCarouselData": [
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-1.jpg"},
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-2.jpg"}
+      ],
+      "socialShare": [
+        { "key": "instagram", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "facebook", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "twitter", "url": "https://www.majidalfuttaim.com/"}
+      ]
+    },
+    {
+      "id": 2,
+      "key": "spooky-times",
+      "title": "Spooky Times",
+      "description": "Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.<br/><br/>Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.",
+      "tripCarouselData": [
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-1.jpg"},
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-2.jpg"}
+      ],
+      "socialShare": [
+        { "key": "instagram", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "facebook", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "twitter", "url": "https://www.majidalfuttaim.com/"}
+      ]
+    },
+    {
+      "id": 3,
+      "key": "desert-madness",
+      "title": "Desert Madness",
+      "description": "Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.<br/><br/>Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.",
+      "tripCarouselData": [
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-1.jpg"},
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-2.jpg"}
+      ],
+      "socialShare": [
+        { "key": "instagram", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "facebook", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "twitter", "url": "https://www.majidalfuttaim.com/"}
+      ]
+    },
+    {
+      "id": 4,
+      "key": "out-in-the-wild",
+      "title": "Out in the wild",
+      "description": "Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.<br/><br/>Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.",
+      "tripCarouselData": [
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-1.jpg"},
+        { "title": "grand dunes landscape", "imageSrc": "assets/images/carousel-2.jpg"}
+      ],
+      "socialShare": [
+        { "key": "instagram", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "facebook", "url": "https://www.majidalfuttaim.com/"},
+        { "key": "twitter", "url": "https://www.majidalfuttaim.com/"}
+      ]
+    }
+]
