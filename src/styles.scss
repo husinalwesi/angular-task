@@ -13,6 +13,7 @@
          url('assets/fonts/Noe-Display-Medium/Noe-Display-Medium.woff') format('woff'), 
          url('assets/fonts/Noe-Display-Medium/Noe-Display-Medium.ttf') format('truetype'), 
          url('assets/fonts/Noe-Display-Medium/Noe-Display-Medium.svg') format('svg');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Larsseit';
@@ -21,6 +22,7 @@
          url('assets/fonts/Larsseit/Larsseit.woff') format('woff'), 
          url('assets/fonts/Larsseit/Larsseit.ttf') format('truetype'), 
          url('assets/fonts/Larsseit/Larsseit.svg') format('svg');
+    font-display: swap;
 }
 // GENERAL
 *, *::before, *::after {
