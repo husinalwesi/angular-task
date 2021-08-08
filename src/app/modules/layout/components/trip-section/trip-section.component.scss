@@ -1,0 +1,138 @@
+#trip-section{
+    background-color: rgba(1,22,39,1);
+    padding-bottom: 5rem;
+    scroll-margin: 30px 0 0 0;
+    & .container{
+        max-width: 65%;
+        z-index: 2;
+        & .pick-your-trip-section{
+            -webkit-animation-name: fade-in-animation;
+                    animation-name: fade-in-animation;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            & h1{
+                font-size: 3.3rem;
+                letter-spacing: -0.02em;
+            }
+            & span.icon{
+                margin: 6px 1.6rem 0 1.6rem;
+            }
+            & p{
+                font-size: 11px;
+                letter-spacing: -0.02em;
+                opacity: 0.8;
+                margin-top: 6px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+#trip-tabs {
+    -webkit-animation-name: fade-in-animation;
+            animation-name: fade-in-animation;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    &.nav-tabs{
+        border-bottom: 2px solid rgba(65, 234, 212, 0.3);
+        & .nav-link{
+            color: #FFFFFF;
+            opacity: 0.5;
+            font-size: 11px;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            &:not(.active) {
+                padding-bottom: 26px;
+            }
+            &::after{
+                content: " ";
+                width: 0;
+                height: 2px;
+                background-color: transparent;
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+        }
+        & .nav-link.active,
+        & .nav-item.show .nav-link{
+            color: var(--primary-color);
+            opacity: 1;
+            font-size: 12px;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            &::after{
+                right: 0;
+                margin: 0 auto;
+                width: 100%;
+                background-color: var(--primary-color);
+                -webkit-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+@-webkit-keyframes fade-in-animation{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fade-in-animation{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+// Media Query
+// // Medium devices (tablets)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #trip-section .container .pick-your-trip-section h1{
+        font-size: 1.8rem;
+    }
+}
+// // Extra small devices and Small devices (portrait phones, landscape phones)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #trip-section .container{
+        & .pick-your-trip-section h1{
+            font-size: 1.8rem;
+        }
+        & #trip-tabs.nav-tabs{
+            & .nav-link{
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 10px;
+            }
+            & .nav-link.active,
+            & .nav-item.show .nav-link{
+                font-size: 11px;        
+            }
+        }
+    }
+}
+app-animated-light-background{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+// Extra small devices (portrait phones)
+@media (max-width: 575.98px) {
+    #trip-section .container{
+        & .pick-your-trip-section h1{
+            font-size: 1.4rem;
+        }
+        & #trip-tabs{
+            &.nav-tabs{
+                border-bottom: 0;
+                & .nav-link{
+                    padding-bottom: 23px;
+                    padding-top: 10px;
+                    &::after {
+                        bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
