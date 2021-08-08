@@ -3,6 +3,55 @@ header .navbar{
     top: 45px;
     & .container{
         max-width: 76%;
+        & #navbarSupportedContent {
+            & .close {
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+                cursor: pointer;
+            }
+            ul {
+                top: 25%;
+                margin-top: 30px;
+                & a {
+                padding: 8px;
+                font-size: 36px;
+                color: #818181;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                    &:hover,
+                    &:focus {
+                        color: #f1f1f1;
+                    }
+              }
+            }
+            position: fixed;
+            width: 0;
+            left: 100%;
+            top: 0;
+            background-color: rgba(1, 22, 39);
+            background-color: rgba(1, 22, 39, 0.95);
+            overflow-x: hidden;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+            &.show{
+                width: 100%;
+                left: 0;
+            }
+            & .nav-link{
+                font-size: 14px;
+            }
+        }
+        & .collapse{
+            &:not(.show) {
+                display: none;
+            }
+            &.show {
+                display: block;
+            }
+        }
         & .navbar-brand{
             font-family: 'Playfair Display';
             font-size: 25px;
@@ -40,4 +89,13 @@ header .navbar{
 @keyframes main-menu-animation {
     from {margin-right: -100%;opacity: 0;}
     to {margin-right: 0;opacity: 1;}
+}
+// Media Query
+// // Medium devices, Small devices and Extra small devices (tablets, landscape phones, portrait phones)
+@media (max-width: 991.98px){
+    header .navbar #navbarSupportedContent{
+        &.collapse.show {
+            display: block;
+        }
+    }
 }

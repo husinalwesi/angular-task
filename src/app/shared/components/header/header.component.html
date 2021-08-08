@@ -1,3 +1,7 @@
+<!--
+  (click)="isNavbarCollapsed = !isNavbarCollapsed"
+  ** It will toggle the collapsed flag value.
+-->
 <header>
   <nav class="navbar navbar-light position-absolute w-100">
     <div class="container pr-4">
@@ -9,9 +13,17 @@
           </a>
         </li>
         <li class="nav-item mr-0">
-          <button class="text-white text-uppercase btn custom-btn position-relative nav-link">Menu</button>
+          <button (click)="isNavbarCollapsed = !isNavbarCollapsed" class="text-white text-uppercase btn custom-btn position-relative nav-link">Menu</button>
         </li>
       </ul>
+      <div class="collapse navbar-collapse h-100" id="navbarSupportedContent" [class.show]="isNavbarCollapsed">
+        <a (click)="isNavbarCollapsed = !isNavbarCollapsed" class="close position-absolute text-white">&times;</a>
+        <ul class="navbar-nav position-relative w-100 text-center ml-auto">
+          <li class="nav-item" *ngFor="let menuItem of mainMenuLinks" routerLinkActive="active">
+            <a class="nav-link d-block text-decoration-none text-capitalize text-white" [routerLink]="menuItem.path" (click)="isNavbarCollapsed = !isNavbarCollapsed">{{menuItem.title}}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
