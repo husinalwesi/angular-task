@@ -1,0 +1,43 @@
+header .navbar{
+    z-index: 3;
+    top: 45px;
+    & .container{
+        max-width: 76%;
+        & .navbar-brand{
+            font-family: 'Playfair Display';
+            font-size: 25px;
+            -webkit-animation-name: brand-animation;
+                    animation-name: brand-animation;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            & span{
+                color: #45ead5;
+            }
+        }
+        & ul {
+            -webkit-animation-name: main-menu-animation;
+                    animation-name: main-menu-animation;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            & > li.nav-item{
+                margin: 0 5px;
+            }
+        }
+    }
+}
+@-webkit-keyframes brand-animation {
+    from {margin-left: -100%;opacity: 0;}
+    to {margin-left: 0;opacity: 1;}
+}
+@keyframes brand-animation {
+    from {margin-left: -100%;opacity: 0;}
+    to {margin-left: 0;opacity: 1;}
+}
+@-webkit-keyframes main-menu-animation {
+    from {margin-right: -100%;opacity: 0;}
+    to {margin-right: 0;opacity: 1;}
+}
+@keyframes main-menu-animation {
+    from {margin-right: -100%;opacity: 0;}
+    to {margin-right: 0;opacity: 1;}
+}
