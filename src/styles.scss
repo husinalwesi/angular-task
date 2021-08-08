@@ -82,47 +82,47 @@ html {
 .ml-auto, .mx-auto {
     margin-left: auto;
 }
-.mr-auto, .mx-auto {
+.mx-auto {
     margin-right: auto;
 }
-.mt-0, .my-0 {
+.my-0 {
     margin-top: 0;
 }
-.mr-0, .mx-0 {
+.mr-0{
     margin-right: 0;
 }
 .mb-0, .my-0 {
     margin-bottom: 0;
 }
-.mb-4, .my-4 {
+.mb-4{
     margin-bottom: 1.5rem;
 }
-.mt-1, .my-1 {
+.mt-1{
     margin-top: 0.25rem;
 }
 // PADDING
 .p-0 {
     padding: 0;
 }
-.pr-4, .px-4 {
+.pr-4{
     padding-right: 1.5rem;
 }
-.pb-5, .py-5 {
+.pb-5{
     padding-bottom: 3rem;
 }
-.pt-0, .py-0 {
+.pt-0{
     padding-top: 0;
 }
-.pb-4, .py-4 {
+.pb-4{
     padding-bottom: 1.5rem;
 }
-.pl-0, .px-0 {
+.pl-0{
     padding-left: 0;
 }
-.pl-2, .px-2 {
+.pl-2{
     padding-left: 0.5rem;
 }
-.pt-5, .py-5 {
+.pt-5{
     padding-top: 3rem;
 }
 // POSITION
@@ -193,11 +193,7 @@ button{
     -webkit-appearance: button;
     overflow: visible;
 }
-svg {
-    overflow: hidden;
-    vertical-align: middle;
-}
-h1, h2, h3, h4, h5, h6 {
+h1{
     font-family: "Noe-Display-Medium";    
     margin-top: 0;
     font-weight: 500;
